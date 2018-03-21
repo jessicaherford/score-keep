@@ -1,11 +1,8 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
 import {Meteor} from 'meteor/meteor';
 import {Players} from './../imports/api/players';
 
-Meteor.startup(function() {
-    Players.insert({
-      name: 'Billy',
-      score: 3
-    });
+Meteor.startup(() => {
 
-    console.log(Players.find().fetch());
 });
